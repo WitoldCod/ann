@@ -51,7 +51,7 @@ for i in range(n_inputs):
     inputs.append(val)
 inputs = np.array(inputs)
 print("inputs: ")
-print(np.array(inputs))
+print([inputs])
 
 # Inicjalizacja sieci neuronowej
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
