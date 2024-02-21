@@ -50,6 +50,8 @@ for i in range(n_inputs):
     val = float(input(f"Wprowadź wartość dla wejścia {i+1}: "))
     inputs.append(val)
 inputs = np.array(inputs)
+print("inputs: ")
+print(inputs)
 
 # Inicjalizacja sieci neuronowej
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
