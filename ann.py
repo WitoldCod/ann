@@ -52,10 +52,6 @@ for i in range(n_inputs):
 inputs = np.array(inputs)
 print("inputs: ")
 print(inputs)
-tablica = []
-tablica.append(inputs)
-print("tablica: ")
-print(tablica)
 
 # Inicjalizacja sieci neuronowej
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
