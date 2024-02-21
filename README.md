@@ -1,3 +1,2 @@
-# ann_repo
-* ann - artificial neural network
+# ann - artificial neural network
 pl - sztuczma sieć neuronowa
