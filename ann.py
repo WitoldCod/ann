@@ -43,6 +43,13 @@ n_outputs = int(input("Podaj liczbę wyjść: "))
 n_hidden_layers = int(input("Podaj liczbę warstw ukrytych: "))
 n_neurons_per_layer = int(input("Podaj liczbę neuronów na warstwę: "))
 
+# Wprowadzenie danych wejściowych ręcznie
+print("Wprowadź dane wejściowe:")
+inputs = []
+for i in range(n_inputs):
+    val = float(input(f"Wprowadź wartość dla wejścia {i+1}: "))
+    inputs.append(val)
+inputs = np.array(inputs)
 
 # Inicjalizacja sieci neuronowej
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
