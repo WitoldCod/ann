@@ -52,7 +52,7 @@ for i in range(n_inputs):
 inputs = np.array(inputs)
 print("inputs: ")
 print(inputs)
-Tablica = []
+tablica = []
 tablica.append(inputs)
 print("tablica: ")
 print(tablica)
