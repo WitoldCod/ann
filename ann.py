@@ -32,10 +32,17 @@ class NeuralNetwork:
         return x
 
 # Przykład użycia
-n_inputs = 1
-n_outputs = 2
-n_hidden_layers = 2
-n_neurons_per_layer = 4
+# n_inputs = 1
+# n_outputs = 2
+# n_hidden_layers = 2
+# n_neurons_per_layer = 4
+
+# Pobranie liczby wejść, wyjść, warstw ukrytych i neuronów na warstwę od użytkownika
+n_inputs = int(input("Podaj liczbę wejść: "))
+n_outputs = int(input("Podaj liczbę wyjść: "))
+n_hidden_layers = int(input("Podaj liczbę warstw ukrytych: "))
+n_neurons_per_layer = int(input("Podaj liczbę neuronów na warstwę: "))
+
 
 # Inicjalizacja sieci neuronowej
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
