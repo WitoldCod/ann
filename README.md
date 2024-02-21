@@ -1,3 +1,3 @@
 # ann - artificial neural network
-pl - sztuczma sieć neuronowa
-A programming language - python
+* pl - sztuczna sieć neuronowa
+* A programming language - python
