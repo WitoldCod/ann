@@ -32,7 +32,7 @@ class NeuralNetwork:
         return x
 
 # Przykład użycia
-n_inputs = 3
+n_inputs = 1
 n_outputs = 2
 n_hidden_layers = 2
 n_neurons_per_layer = 4
