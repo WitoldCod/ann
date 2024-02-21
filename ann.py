@@ -61,7 +61,8 @@ print(tablica)
 network = NeuralNetwork(n_inputs, n_outputs, n_hidden_layers, n_neurons_per_layer)
 
 # Przykładowe dane wejściowe
-input_data = np.random.rand(1, n_inputs)
+# input_data = np.random.rand(1, n_inputs)
+input_data = np.vstack([inputs])
 
 # Propagacja w przód
 output = network.forward(input_data)
