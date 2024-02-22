@@ -44,7 +44,7 @@ def main():
     for watek_nowy in watki:
         watek_nowy.join()
 
-    print("/n\n")
+    print("\n\n\n\n")
     print("liczba aktywnych wątków: ")
     print(threading.active_count())
     print("Wszystkie wątki zakończyły pracę.")
