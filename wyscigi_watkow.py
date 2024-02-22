@@ -17,10 +17,10 @@ from tqdm import tqdm
 
 def watek(id, postep):
     # Losowa liczba iteracji dla wątku
-    ilosc_iteracji = random.randint(15, 15)
+    ilosc_iteracji = random.randint(5, 15)
     for _ in tqdm(range(ilosc_iteracji), desc=f'Wątek {id}'):
         # Symulacja zadania
-        time.sleep(random.uniform(0.5, 0.5))
+        time.sleep(random.uniform(0.1, 0.5))
 
 
 def main():
