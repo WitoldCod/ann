@@ -25,7 +25,7 @@ def watek(id, postep):
 
 def main():
     # Pobranie liczby dostępnych wątków
-    ilosc_watkow = 5 # threading.active_count()
+    ilosc_watkow = 8 # threading.active_count()
     print("ilość wątków: ")
     print(ilosc_watkow)
     # Inicjalizacja tablicy postępu dla każdego wątku
@@ -39,13 +39,14 @@ def main():
         watek_nowy = threading.Thread(target=watek, args=(i, None))
         watki.append(watek_nowy)
         watek_nowy.start()
-    print("liczba aktywnych wątków: ")
-    print(threading.active_count())
 
     # Oczekiwanie na zakończenie wszystkich wątków
     for watek_nowy in watki:
         watek_nowy.join()
 
+    print("/n\n")
+    print("liczba aktywnych wątków: ")
+    print(threading.active_count())
     print("Wszystkie wątki zakończyły pracę.")
 
 if __name__ == "__main__":
