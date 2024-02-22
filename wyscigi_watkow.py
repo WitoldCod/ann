@@ -5,10 +5,10 @@ import time
 # Funkcja, którą będą wykonywać wątki
 def watek(id, postep):
     # Losowa liczba iteracji dla wątku
-    ilosc_iteracji = random.randint(5, 15)
+    ilosc_iteracji = random.randint(15, 15)
     for i in range(ilosc_iteracji):
         # Symulacja zadania
-        time.sleep(random.uniform(0.1, 0.5))
+        time.sleep(random.uniform(0.1, 0.1))
         # Aktualizacja postępu wątku
         postep[id] = i / ilosc_iteracji
         # Wypisanie postępu wątku
