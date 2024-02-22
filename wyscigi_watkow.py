@@ -16,7 +16,7 @@ def watek(id, postep):
 
 def main():
     # Pobranie liczby dostępnych wątków
-    ilosc_watkow = threading.active_count()
+    ilosc_watkow = 4 # threading.active_count()
     print("ilość wątków: ")
     print(ilosc_watkow)
     # Inicjalizacja tablicy postępu dla każdego wątku
