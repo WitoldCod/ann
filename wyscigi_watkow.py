@@ -35,7 +35,8 @@ def main():
 
     # Tworzenie i uruchamianie wątków
     for i in range(ilosc_watkow):
-        watek_nowy = threading.Thread(target=watek, args=(i, postep))
+        # watek_nowy = threading.Thread(target=watek, args=(i, postep))
+        watek_nowy = threading.Thread(target=watek, args=(i, None))
         watki.append(watek_nowy)
         watek_nowy.start()
 
