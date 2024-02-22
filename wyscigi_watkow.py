@@ -42,11 +42,13 @@ def main():
 
     # Oczekiwanie na zakończenie wszystkich wątków
     for watek_nowy in watki:
+        print("liczba aktywnych wątków: ")
+        print(threading.active_count())
         watek_nowy.join()
 
     print("\n\n\n\n")
-    print("liczba aktywnych wątków: ")
-    print(threading.active_count())
+    # print("liczba aktywnych wątków: ")
+    # print(threading.active_count())
     print("Wszystkie wątki zakończyły pracę.")
 
 if __name__ == "__main__":
