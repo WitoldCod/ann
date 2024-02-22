@@ -39,6 +39,8 @@ def main():
         watek_nowy = threading.Thread(target=watek, args=(i, None))
         watki.append(watek_nowy)
         watek_nowy.start()
+    print("liczba aktywnych wątków: ")
+    print(threading.active_count())
 
     # Oczekiwanie na zakończenie wszystkich wątków
     for watek_nowy in watki:
